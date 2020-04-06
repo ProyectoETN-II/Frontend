@@ -22,7 +22,7 @@
     "@types/jquery": "^3.3.31",
     "boostrap": "^2.0.0",
     "bootstrap": "^3.3.6",
-    "jquery": "^1.9.1",
+    "jquery": "^3.4.0",
     "moment": "^2.24.0",
     "ngx-moment": "^3.4.0",
     "popper.js": "^1.15.0",
