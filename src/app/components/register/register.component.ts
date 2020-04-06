@@ -95,8 +95,6 @@ export class RegisterComponent{
 					// PERSISTIR TOKEN DEL USUARIO
 					localStorage.setItem('token',this.token);
 
-					// Conseguir los contadores o estadisticas del usuario
-					this.getCounters();
 				}
 				
 			},
@@ -111,19 +109,6 @@ export class RegisterComponent{
 		);
 	}
 
-	getCounters(){
-		this._userService.getCounters().subscribe(
-			response => {
-				localStorage.setItem('stats', JSON.stringify(response));
-				this.status = 'success';
-				this._router.navigate(['/publicaciones']);
-			},
-			error => {
-				console.log(<any>error);
-			}
-		)
-
-	}
 
 
 }
