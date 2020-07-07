@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { routing, appRoutingProviders } from './app.routing';
-import { MomentModule } from 'ngx-moment';
 
 
 // Componentes
@@ -24,7 +23,6 @@ import { UserGuard } from './services/user.guard';
     FormsModule,
     routing,
     HttpClientModule,
-    MomentModule
   ],
   providers: [
     appRoutingProviders,
