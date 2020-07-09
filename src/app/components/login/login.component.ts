@@ -22,6 +22,7 @@ export class LoginComponent{
 		private _userService: UserService
 	){
 		this.title = 'login';
+		console.log(this.title)
 	}
 
 
